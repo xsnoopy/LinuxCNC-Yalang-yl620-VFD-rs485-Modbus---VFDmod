@@ -1,0 +1,32 @@
+<pyvcp>
+<labelframe text="config">
+
+    <label text="Output RPM:"/>
+    <bar halpin="rpm-out" max_="24000"/>
+
+    <table flexible_rows="[1]" flexible_columns="[2]">
+    <tablerow/>
+        <label text="Spindle at speed"/>
+        <led halpin="at-speed" size="12" on_color="green" off_color="red"/>
+    <tablerow/>
+        <label text="'\nParameters:'"/>
+
+    <!-- User parameters start here -->
+    <!-- User parameters end -->
+
+    <tablerow/>
+        <label text="'\nRS485:'"/>
+    <tablerow/>
+        <label text="Is connected"/>
+        <led halpin="is-connected" size="12" on_color="green" off_color="red"/>
+    <tablerow/>
+        <label text="Error count"/>
+        <s32 halpin="error-count"/>
+    <tablerow/>
+        <label text="Last error"/>
+        <s32 halpin="last-error"/>
+    </table>
+
+</labelframe>
+</pyvcp>
+
