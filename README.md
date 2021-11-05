@@ -14,10 +14,11 @@ The plan is that this repository will provide you with:
 - [X] Get the basic communication running. (Start, Stop, Direction, Speed) :tada:
 - [X] Have a a basic [PyVCP](http://linuxcnc.org/docs/2.8/html/gui/pyvcp.html). 
 - [ ] Translate the Yalang [YL620 Modbus Manual](Modbus.docx) from Chinese to English. (partly done)
-- [ ] Read out feedback registers (Voltage, Current,...).
-- [ ] Read out the parameter registers.
-- [ ] Display Parameter registers in a Axis Tab.
+- [X] Read out feedback registers (Voltage, Current,...).
+- [X] Read out the parameter registers.
+- [X] Display Parameter registers in a Axis Tab.
 - [ ] Integrate a drop down setting for each parameter in the Axis Tab.
 
 # Changelog
 02. November 2021 Repository created
+04. November 2021 Integreated the Parameter register and feedback register read out. Unfortunatley the VFD doesn't show good values in Voltage and Current. This is an issue of the VFD since even on the display it doesn't show correct values. Updated the tab. 
