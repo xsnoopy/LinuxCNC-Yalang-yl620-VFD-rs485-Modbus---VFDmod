@@ -3,11 +3,10 @@
 net spindle-at-speed vfdmod.spindle.at-speed <= pyvcp.at-speed
 
 
-net spindle-forward  vfdmod.control.run-forward spindle.0.forward
+net spindle-forward  vfdmod.control.run-forward spindle.0.forward 
 net spindle-reverse  vfdmod.control.run-reverse spindle.0.reverse
-net spindle-speed-in   vfdmod.spindle.rpm-in  spindle.0.speed-out-abs
+net spindle-speed-in   vfdmod.spindle.rpm-in  spindle.0.speed-out-abs 
 net spindle-speed-out  vfdmod.spindle.rpm-out spindle.0.speed-in pyvcp.rpm-out
-
 
 # Communication
 net pyvcp-is-connected vfdmod.rs485.is-connected => pyvcp.is-connected
@@ -15,3 +14,5 @@ net pyvcp-error-count vfdmod.rs485.error-count => pyvcp.error-count
 net pyvcp-last-error vfdmod.rs485.last-error => pyvcp.last-error
 
 # User parameters
+net P00.00  vfdmod.parameters.P00.00 pyvcp.P00.00
+net P00.01  vfdmod.parameters.P00.01 pyvcp.P00.01

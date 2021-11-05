@@ -1,18 +1,50 @@
 <pyvcp>
+    <label text="HomeX"/>
+    <led>
+    	<halpin>"homex"</halpin>
+    </led>
+    
+    <label text="HomeY"/>
+    <led>
+	    <halpin>"homey"</halpin>
+    </led>
+        
+    <label text="HomeZ"/>
+    <led>
+	    <halpin>"homez"</halpin>
+    </led>
+    
+
 <labelframe text="config">
 
-    <label text="Output RPM:"/>
-    <bar halpin="rpm-out" max_="24000"/>
 
+    <meter>
+        <halpin>"rpm-out"</halpin>
+        <text>"Spindle"</text>
+        <subtext>"rpm"</subtext>
+        <size>250</size>
+        <min_>0</min_>
+        <max_>24000</max_>
+        <majorscale>3000</majorscale>
+        <minorscale>1000</minorscale>
+        <region1>(0,4000,"yellow")</region1>
+        <region2>(4001,23000,"green")</region2>
+        <region3>(23000,24000,"red")</region3>
+    </meter>
     <table flexible_rows="[1]" flexible_columns="[2]">
     <tablerow/>
         <label text="Spindle at speed"/>
         <led halpin="at-speed" size="12" on_color="green" off_color="red"/>
     <tablerow/>
         <label text="'\nParameters:'"/>
-
-    <!-- User parameters start here -->
-    <!-- User parameters end -->
+    <!-- User parameters start here-->
+    <tablerow/>
+        <label text="P00.00"/>
+        <u32 halpin="P00.00"/>
+    <tablerow/>
+        <label text="P00.01"/>
+        <u32 halpin="P00.01"/>
+    <!--  User parameters end -->
 
     <tablerow/>
         <label text="'\nRS485:'"/>
@@ -29,4 +61,3 @@
 
 </labelframe>
 </pyvcp>
-
