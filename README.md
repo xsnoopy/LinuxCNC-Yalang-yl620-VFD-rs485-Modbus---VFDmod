@@ -33,7 +33,7 @@ The plan is that this repository will provide you with:
 - [ ] Integrate a drop down setting for each parameter in the Axis Tab.
 
 # Changelog
-02. November 2021 Repository created
-04. November 2021 Integreated the Parameter register and feedback register read out. Unfortunatley the VFD doesn't show good values in Voltage and Current. This is an issue of the VFD since even on the display it doesn't show correct values. Updated the tab. 
-09. November 2021 Thanks to eNnvi for the upload of the English manual. 
-18. November 2021 Added How to section. 
+- `02. November 2021` Repository created
+- `04. November 2021` Integreated the Parameter register and feedback register read out. Unfortunatley the VFD doesn't show good values in Voltage and Current. This is11n issue of the VFD since even on the display it doesn't show correct values. Updated the tab. 
+- `09. November 2021` Thanks to eNnvi for the upload of the English manual. 
+- `18. November 2021` Added How to section. 
