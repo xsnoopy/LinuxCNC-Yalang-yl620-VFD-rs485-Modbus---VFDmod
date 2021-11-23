@@ -21,13 +21,14 @@ The plan is that this repository will provide you with:
 - Add `loadusr -W vfdmod vfd.ini` to the custom.hal file.
 - Add `source vfd.hal` to the postgui_call_list.hal file.
 
+![VFD.png](VFD.png)
 
 # Roadmap
 - [X] Create the repository.
 - [X] Get the basic communication running. (Start, Stop, Direction, Speed) :tada:
 - [X] Have a a basic [PyVCP](http://linuxcnc.org/docs/2.8/html/gui/pyvcp.html). 
 - [X] Translate the Yalang [YL620 Modbus Manual](Modbus.docx) from Chinese to English. (partly done) 
-- [X] Read out feedback registers (Voltage, Current,...).
+- [X] Read out feedback registers (Voltage, Current,...). Voltage and Current readings seems to be wrong, but also wrong in the VFD display. Confirm to P00.24.
 - [X] Read out the parameter registers.
 - [X] Display Parameter registers in a Axis Tab.
 - [ ] Integrate a drop down setting for each parameter in the Axis Tab.
@@ -37,3 +38,4 @@ The plan is that this repository will provide you with:
 - `04. November 2021` Integreated the Parameter register and feedback register read out. Unfortunatley the VFD doesn't show good values in Voltage and Current. This is11n issue of the VFD since even on the display it doesn't show correct values. Updated the tab. 
 - `09. November 2021` Thanks to eNnvi for the upload of the English manual. 
 - `18. November 2021` Added How to section. 
+- `22. November 2021` Added some more Registers. Looking for reports on the OutputVoltage and OutputCurrent readings. 
