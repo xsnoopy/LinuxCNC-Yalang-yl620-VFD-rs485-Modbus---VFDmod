@@ -1,19 +1,21 @@
 <pyvcp>
+<table flexible_rows="[1]" flexible_columns="[2]">
+    <tablerow/>
     <label text="HomeX"/>
     <led>
     	<halpin>"homex"</halpin>
     </led>
-    
+    <tablerow/>
     <label text="HomeY"/>
     <led>
 	    <halpin>"homey"</halpin>
     </led>
-        
+    <tablerow/>    
     <label text="HomeZ"/>
     <led>
 	    <halpin>"homez"</halpin>
     </led>
-    
+    </table>
 
 <labelframe text="config">
 
@@ -36,15 +38,74 @@
         <label text="Spindle at speed"/>
         <led halpin="at-speed" size="12" on_color="green" off_color="red"/>
     <tablerow/>
+    <label text="TargetFrequency"/>
+        <number halpin="TargetFrequency" format="4.1f"/> 
+        <label text="HZ"/>
+    <tablerow/>    
+    <label text="OutputCurent"/>
+        <number halpin="OutputCurent" format="4.1f"/> 
+        <label text="A"/>
+    <tablerow/>    
+    <label text="OutputVoltage"/>
+        <number halpin="OutputVoltage" format="4.1f"/> 
+        <label text="V"/>
+    <tablerow/>    
+    <label text="MainLineVoltage"/>
+        <number halpin="MainLineVoltage" format="4.1f"/> 
+        <label text="V"/> 
+    <tablerow/>    
+    <label text="CurrentAccelerationTime"/>
+        <number halpin="CurrentAccelerationTime" format="4.1f"/> 
+        <label text="s"/> 
+    <tablerow/>    
+    <label text="CurrentDeAccelerationTime"/>
+        <number halpin="CurrentDeAccelerationTime" format="4.1f"/> 
+        <label text="s"/> 
+    
+    <tablerow/>
         <label text="'\nParameters:'"/>
-    <!-- User parameters start here-->
+
+
+
+
+
+    <!-- User parameters start here--> 
     <tablerow/>
         <label text="P00.00"/>
-        <u32 halpin="P00.00"/>
+        <number halpin="P00.00" format="4.1f"/> 
+        <label text="HZ"/>    
+        
     <tablerow/>
         <label text="P00.01"/>
         <u32 halpin="P00.01"/>
-    <!--  User parameters end -->
+    <tablerow/>
+        <label text="P00.24"/>
+        <u32 halpin="P00.24"/>
+    <tablerow/>
+        <label text="P06.00"/>
+        <number halpin="P06.00" format="4.1f"/>
+    <tablerow/>
+        <label text="P06.01"/>
+        <number halpin="P06.01" format="4.1f"/>
+    <tablerow/>
+        <label text="P06.02"/>
+        <number halpin="P06.02" format="4.1f"/>    
+    <tablerow/>
+        <label text="P11.00"/>
+        <u32 halpin="P11.00"/>
+    <tablerow/>
+        <label text="P11.01"/>
+        <u32 halpin="P11.01"/>
+    <tablerow/>
+        <label text="P11.02"/>
+        <u32 halpin="P11.02"/>
+    <tablerow/>
+        <label text="P11.03"/>
+        <u32 halpin="P11.03"/>
+    <tablerow/>
+        <label text="P11.04"/>
+        <u32 halpin="P11.04"/>    
+        <!--  User parameters end -->
 
     <tablerow/>
         <label text="'\nRS485:'"/>
