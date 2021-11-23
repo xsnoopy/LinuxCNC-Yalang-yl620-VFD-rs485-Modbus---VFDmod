@@ -1,4 +1,4 @@
-# LinuxCNC-Yalang-yl620-VFD-rs485-Modbus
+# LinuxCNC-Yalang-yl620-VFD-rs485-Modbus with VFDmod
 # About
 This repository should help users with the [Modbus RS485](https://en.wikipedia.org/wiki/RS-485) communication of a Yalang YL620 Variable Frequency Drive VFD and the integration in [LinuxCNC](http://linuxcnc.org/). Some more information is based in the [LinuxCNC Forum](https://forum.linuxcnc.org/24-hal-components/39128-yalang-yl620-vfd-rs485-modbus-communicaiton?start=0).
 
