@@ -8,6 +8,9 @@ The plan is that this repository will provide you with:
 -   The necessary [HAL](http://linuxcnc.org/docs/2.8/html/hal/intro.html) file for [LinuxCNC](http://linuxcnc.org/).
 -   A [PyVCP](http://linuxcnc.org/docs/2.8/html/gui/pyvcp.html) file for the [Axis Ui](http://linuxcnc.org/docs/2.8/html/gui/axis.html). 
 
+The VFD RS 485 Signal is very noisy. I used this adapter which works best for me 
+https://amzn.to/4886Km0 (Amazon affiliate link)
+
 # How to
 - Set up the VFD drive to receive signals via Modbus. 
   - P00.01 = 3  Start/Stop command source RS485
